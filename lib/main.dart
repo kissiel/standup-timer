@@ -35,7 +35,7 @@ int generate_standup_number() {
   int workingDays = 0;
 
   // warning: the code below is inefficient AF
-  // but it's easy and adding ignored days (like holidays is straightforward)
+  // but it's easy and adding ignored days (like holidays) is straightforward
   for (DateTime date = DateTime.fromMillisecondsSinceEpoch(1709334000000);
       // TODO: if there's holiday on that date, skip it
       date.isBefore(today);
